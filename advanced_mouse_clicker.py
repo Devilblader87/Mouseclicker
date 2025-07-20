@@ -2,6 +2,7 @@ import sys
 import threading
 import time
 import tkinter as tk
+from tkinter import messagebox
 
 # Attempt to import required third-party libraries
 try:
@@ -11,7 +12,7 @@ except Exception:
     # Fallback message using tkinter so we do not require PySimpleGUI
     root = tk.Tk()
     root.withdraw()
-    tk.messagebox.showerror(
+    messagebox.showerror(
         "Missing Dependencies",
         "This script requires PySimpleGUI and pyautogui.\n"
         "Install with: pip install pysimplegui pyautogui",
