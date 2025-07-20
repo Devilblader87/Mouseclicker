@@ -4,6 +4,7 @@ import time
 import tkinter as tk
 from tkinter import messagebox
 
+
 # Attempt to import required third-party libraries
 try:
     import PySimpleGUI as sg
@@ -13,6 +14,7 @@ except Exception:
     root = tk.Tk()
     root.withdraw()
     messagebox.showerror(
+    tk.messagebox.showerror(
         "Missing Dependencies",
         "This script requires PySimpleGUI and pyautogui.\n"
         "Install with: pip install pysimplegui pyautogui",
